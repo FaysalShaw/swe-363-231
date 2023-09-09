@@ -1,0 +1,59 @@
+<html>
+    <form action="Submission.html" method="get">
+    <label for="firstName">First Name:</label>
+<input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="Sami" />
+<p></p>
+<label for="lastName">Last Name:</label>
+<input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="alhawwari"/>
+<p></p>
+    <label for="date">Enter your date of birth:</label>
+    
+    <input type="date" value="2017-06-01" />
+<p></p>
+<label for="email">Enter your email:</label>
+
+<input type="email" id="email" placeholder="e.g. Example@given.com"/>
+<p></p>
+<fieldset>
+    <legend>How many years of experience as a barber</legend>
+  
+    
+      <input type="radio" id="Less than a year" name="Experience" value="Less than a year" checked />
+      <label for="Less than a year">Less than a year</label>
+    
+  
+    
+      <input type="radio" id="2+ Years" name="Experience" value="2+ Years" />
+      <label for="2+ Years">2+ Years</label>
+    
+  
+    
+      <input type="radio" id="5+ Years" name="Experience" value="5+ Years" />
+      <label for="5+ Years">5+ Years</label>
+    
+  </fieldset>
+  <p></p>
+  <label for="Location-choice">Choose the preffered location to work:</label>
+  <input list="Locations" id="Location-choice" name="Location-choice" />
+  
+  <datalist id="Locations">
+    <option value="Jubail"></option>
+    <option value="Dhahran"></option>
+    <option value="Dammam"></option>
+    <option value="Khobar"></option>
+    <option value="Riyadh"></option>
+    <option value="Jeddah"></option>
+    <option value="Taif"></option>
+    
+  </datalist>
+  <p></p>
+<input type="submit" name="Submit" id="Submit">
+<input type="reset" name="Reset" id="Reset">
+
+
+
+
+
+
+</form>
+</html>
