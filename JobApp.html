@@ -1,19 +1,42 @@
 <html>
     <form action="Submission.html" method="get">
+
+<!--First name and last name input-->
+      <aside><p>
     <label for="firstName">First Name:</label>
-<input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="Sami" />
-<p></p>
+<input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="e.g. Sami" />
+
 <label for="lastName">Last Name:</label>
-<input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="alhawwari"/>
-<p></p>
+<input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="e.g. alhawwari"/>
+</p>
+</aside>
+
+<!--Date of birth input-->
+<aside>
+  <p>
     <label for="date">Enter your date of birth:</label>
     
     <input type="date" value="2017-06-01" />
-<p></p>
+    
+    </p>
+  </aside>
+
+
+
+<!--Email input-->
+  <aside>
+    <p>
 <label for="email">Enter your email:</label>
 
 <input type="email" id="email" placeholder="e.g. Example@given.com"/>
-<p></p>
+</p>
+</aside>
+
+
+
+<!--Years of experience-->
+<aside>
+  <p>
 <fieldset>
     <legend>How many years of experience as a barber</legend>
   
@@ -32,7 +55,14 @@
       <label for="5+ Years">5+ Years</label>
     
   </fieldset>
-  <p></p>
+</p>
+</aside>
+
+
+
+<!--Locations Choice-->
+<aside>
+  <p>
   <label for="Location-choice">Choose the preffered location to work:</label>
   <input list="Locations" id="Location-choice" name="Location-choice" />
   
@@ -46,9 +76,33 @@
     <option value="Taif"></option>
     
   </datalist>
-  <p></p>
+</p>
+</aside>
+    
+
+<!--Language fluency Checkbox-->
+  <aside>
+<p>
+      <input type="checkbox" id="Arabic" name="Arabic"  />
+      <label for="Arabic">I speak arabic or english fluently</label>
+
+      <input type="checkbox" id="Hours" name="Hours"  />
+      <label for="Hours"> I expect to work more than 8 hours</label>
+    </p>
+    </aside>
+
+
+    <!--Expected salary input-->
+<aside>
+  <p>
+  <label for="Expected Salary">Enter Expected Salary</label>
+  <input type="number" name="Expected Salary" id="Expected Salary">
+</p>
+</aside>
+
 <input type="submit" name="Submit" id="Submit">
 <input type="reset" name="Reset" id="Reset">
+
 
 
 
