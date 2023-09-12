@@ -1,41 +1,42 @@
 <html>
+  <head><link rel="stylesheet" href="style.css"></head>
     <form action="Submission.html" method="get">
 
 <!--First name and last name input-->
-      <aside><p>
+      <section><p>
     <label for="firstName">First Name:</label>
 <input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="e.g. Sami" />
 
 <label for="lastName">Last Name:</label>
 <input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="e.g. alhawwari"/>
 </p>
-</aside>
+</section>
 
 <!--Date of birth input-->
-<aside>
+<section>
   <p>
     <label for="date">Enter your date of birth:</label>
     
     <input type="date" value="2017-06-01" />
     
     </p>
-  </aside>
+  </section>
 
 
 
 <!--Email input-->
-  <aside>
+  <section>
     <p>
 <label for="email">Enter your email:</label>
 
 <input type="email" id="email" placeholder="e.g. Example@given.com"/>
 </p>
-</aside>
+</section>
 
 
 
 <!--Years of experience-->
-<aside>
+<section>
   <p>
 <fieldset>
     <legend>How many years of experience as a barber</legend>
@@ -56,12 +57,12 @@
     
   </fieldset>
 </p>
-</aside>
+</section>
 
 
 
 <!--Locations Choice-->
-<aside>
+<section>
   <p>
   <label for="Location-choice">Choose the preffered location to work:</label>
   <input list="Locations" id="Location-choice" name="Location-choice" />
@@ -77,11 +78,11 @@
     
   </datalist>
 </p>
-</aside>
+</section>
     
 
 <!--Language fluency Checkbox-->
-  <aside>
+  <section>
 <p>
       <input type="checkbox" id="Arabic" name="Arabic"  />
       <label for="Arabic">I speak arabic or english fluently</label>
@@ -89,16 +90,16 @@
       <input type="checkbox" id="Hours" name="Hours"  />
       <label for="Hours"> I expect to work more than 8 hours</label>
     </p>
-    </aside>
+    </section>
 
 
     <!--Expected salary input-->
-<aside>
+<section>
   <p>
   <label for="Expected Salary">Enter Expected Salary</label>
   <input type="number" name="Expected Salary" id="Expected Salary">
 </p>
-</aside>
+</section>
 
 <input type="submit" name="Submit" id="Submit">
 <input type="reset" name="Reset" id="Reset">
