@@ -1,108 +1,112 @@
 <html>
-  <head><link rel="stylesheet" href="dark_theme.css"></head>
-    <form action="Submission.html" method="get">
 
-<!--First name and last name input-->
-      <section><p>
-    <label for="firstName">First Name:</label>
-<input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="e.g. Sami" />
+<head>
+  <link rel="stylesheet" href="dark_theme.css">
+</head>
+<form action="Submission.html" method="get">
 
-<label for="lastName">Last Name:</label>
-<input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="e.g. alhawwari"/>
-</p>
-</section>
+  <!--First name and last name input-->
+  <section>
+    <p>
+      <label for="firstName">First Name:</label>
+      <input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="e.g. Sami" />
 
-<!--Date of birth input-->
-<section>
-  <p>
-    <label for="date">Enter your date of birth:</label>
-    
-    <input type="date" value="2017-06-01" />
-    
+      <label for="lastName">Last Name:</label>
+      <input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="e.g. alhawwari" />
+    </p>
+  </section>
+
+  <!--Date of birth input-->
+  <section>
+    <p>
+      <label for="date">Enter your date of birth:</label>
+
+      <input type="date" value="2017-06-01" />
+
     </p>
   </section>
 
 
 
-<!--Email input-->
+  <!--Email input-->
   <section>
     <p>
-<label for="email">Enter your email:</label>
+      <label for="email">Enter your email:</label>
 
-<input type="email" id="email" placeholder="e.g. Example@given.com"/>
-</p>
-</section>
+      <input type="email" id="email" placeholder="e.g. Example@given.com" />
+    </p>
+  </section>
 
 
 
-<!--Years of experience-->
-<section>
-  <p>
-<fieldset>
-    <legend>How many years of experience as a barber</legend>
-  
-    
+  <!--Years of experience-->
+  <section>
+    <p>
+    <fieldset>
+      <legend>How many years of experience as a barber</legend>
+
+
       <input type="radio" id="Less than a year" name="Experience" value="Less than a year" checked />
       <label for="Less than a year">Less than a year</label>
-    
-  
-    
+
+
+
       <input type="radio" id="2+ Years" name="Experience" value="2+ Years" />
       <label for="2+ Years">2+ Years</label>
-    
-  
-    
+
+
+
       <input type="radio" id="5+ Years" name="Experience" value="5+ Years" />
       <label for="5+ Years">5+ Years</label>
-    
-  </fieldset>
-</p>
-</section>
+
+    </fieldset>
+    </p>
+  </section>
 
 
 
-<!--Locations Choice-->
-<section>
-  <p>
-  <label for="Location-choice">Choose the preffered location to work:</label>
-  <input list="Locations" id="Location-choice" name="Location-choice" />
-  
-  <datalist id="Locations">
-    <option value="Jubail"></option>
-    <option value="Dhahran"></option>
-    <option value="Dammam"></option>
-    <option value="Khobar"></option>
-    <option value="Riyadh"></option>
-    <option value="Jeddah"></option>
-    <option value="Taif"></option>
-    
-  </datalist>
-</p>
-</section>
-    
-
-<!--Language fluency Checkbox-->
+  <!--Locations Choice-->
   <section>
-<p>
-      <input type="checkbox" id="Arabic" name="Arabic"  />
+    <p>
+      <label for="Location-choice">Choose the preffered location to work:</label>
+      <input list="Locations" id="Location-choice" name="Location-choice" />
+
+      <datalist id="Locations">
+        <option value="Jubail"></option>
+        <option value="Dhahran"></option>
+        <option value="Dammam"></option>
+        <option value="Khobar"></option>
+        <option value="Riyadh"></option>
+        <option value="Jeddah"></option>
+        <option value="Taif"></option>
+
+      </datalist>
+    </p>
+  </section>
+
+
+  <!--Language fluency Checkbox-->
+  <section>
+    <p>
+      <input type="checkbox" id="Arabic" name="Arabic" />
       <label for="Arabic">I speak arabic or english fluently</label>
 
-      <input type="checkbox" id="Hours" name="Hours"  />
+      <input type="checkbox" id="Hours" name="Hours" />
       <label for="Hours"> I expect to work more than 8 hours</label>
     </p>
-    </section>
+  </section>
 
 
-    <!--Expected salary input-->
-<section>
-  <p>
-  <label for="Expected Salary">Enter Expected Salary</label>
-  <input type="number" name="Expected Salary" id="Expected Salary">
-</p>
-</section>
+  <!--Expected salary input-->
+  <section>
+    <p>
+      <label for="Expected Salary">Enter Expected Salary</label>
+      <input type="number" name="Expected Salary" id="Expected Salary">
+    </p>
+  </section>
 
-<input type="submit" name="Submit" id="Submit">
-<input type="reset" name="Reset" id="Reset">
+  <input type="submit" name="Submit" id="Submit">
+  <input type="reset" name="Reset" id="Reset">
 
 
 
@@ -111,4 +115,5 @@
 
 
 </form>
+
 </html>

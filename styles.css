@@ -1,0 +1,44 @@
+em {
+    background-color: blue;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+.top {
+    background-color: rgb(235, 84, 6);
+}
+
+#the_most_important {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.VIP {
+    background-color: black;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+}
+
+h2+p::first-letter {
+    font-size: x-large;
+
+}
+
+tr:hover,
+.VIP:hover,
+.top:hover {
+    background-color: rgb(230, 83, 83);
+}
