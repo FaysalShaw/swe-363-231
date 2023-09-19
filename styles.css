@@ -37,8 +37,41 @@ h2+p::first-letter {
 
 }
 
-tr:hover,
-.VIP:hover,
-.top:hover {
+.rw:hover > .VIP, .rw:hover> .top, .rw:hover {
     background-color: rgb(230, 83, 83);
+}
+nav a{
+   display: inline;
+    text-decoration: none;
+    cursor: default;
+}
+a.first{
+    text-decoration: underline
+    
+}
+
+tr:nth-child(odd){
+background-color: rgb(8, 54, 54);
+}
+
+tr:nth-child(even){
+    background-color: rgb(62, 15, 17);
+
+}
+
+::selection{
+    background-color: black;
+}
+
+a{
+    cursor: pointer;
+}
+input{
+    height: 20px;
+    border-color: lightgray;
+    
+}
+
+#message{
+    height: 50px;
 }
