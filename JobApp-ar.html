@@ -1,0 +1,127 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark_theme.css">
+</head>
+<form action="Submission-ar.html" method="get">
+
+  <!--First name and last name input-->
+  <section>
+    <p>
+      <label for="firstName">الاسم الاول</label>
+      <input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="مثال: سامي" />
+     
+    </p>
+    <p>
+      <label for="lastName">الاسم الاخير</label>
+      <input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="مثال : الحواري" />
+
+      
+    </p>
+  </section>
+
+  <!--Date of birth input-->
+  <section>
+    <p>
+      <label for="date">ادخل تاريخ ميلادك</label>
+
+      <input type="date" value="2017-06-01" />
+
+    </p>
+  </section>
+
+
+
+  <!--Email input-->
+  <section>
+    <p>
+      <label for="email">ادخل ايميلك الالكتروني</label>
+
+      <input type="email" id="email" placeholder="e.g. Example@given.com" />
+    </p>
+  </section>
+
+
+
+  <!--Years of experience-->
+  <section>
+    <p>
+    <fieldset>
+      <legend>ادخل عدد سنين خبرة كحلاق</legend>
+
+
+      <input type="radio" id="Less than a year" name="Experience" value="Less than a year" checked />
+      <label for="Less than a year">اقل من سنة</label>
+
+
+
+      <input type="radio" id="2+ Years" name="Experience" value="2+ Years" />
+      <label for="2+ Years">اكثر من سنتين</label>
+
+
+
+      <input type="radio" id="5+ Years" name="Experience" value="5+ Years" />
+      <label for="5+ Years">اكثر من خمس سنين</label>
+
+    </fieldset>
+    </p>
+  </section>
+
+
+
+  <!--Locations Choice-->
+  <section>
+    <p>
+      <label for="Location-choice">اختر المكان الذي تفضل الشغل فيه</label>
+      <input list="Locations" id="Location-choice" name="Location-choice" />
+
+      <datalist id="Locations">
+        <option value="الجبيل"></option>
+        <option value="الظهران"></option>
+        <option value="الدمام"></option>
+        <option value="الخبر"></option>
+        <option value="الرياض"></option>
+        <option value="جدة"></option>
+        <option value="الطائف"></option>
+
+      </datalist>
+    </p>
+  </section>
+
+
+  <!--Language fluency Checkbox-->
+  <section>
+    <p>
+      <input type="checkbox" id="Arabic" name="Arabic" />
+      <label for="Arabic">انا اتكلم اللغة العربية او الانجليزية بطلاقة</label>
+
+      <input type="checkbox" id="Hours" name="Hours" />
+      <label for="Hours"> اتطلع لاعمل اكثر من ثمان ساعات</label>
+    </p>
+  </section>
+<section> 
+  <label for="Message">ادخل معلومات اضافية</label>
+  <input name="Message" id="Message" type="text" placeholder="ادخل اي معلومات اضافية" />
+</section>
+
+  <!--Expected salary input-->
+  <section>
+    <p>
+      <label for="Expected Salary">اختر راتبك المتوقع</label>
+      <input type="number" name="Expected Salary" id="Expected Salary">
+    </p>
+  </section>
+
+  <input type="submit" name="Submit" id="Submit" class="button">
+  <input type="reset" name="Reset" id="Reset" class="button">
+
+
+
+
+
+
+
+</form>
+
+</html>

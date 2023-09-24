@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(23, 2, 68);
+    background-color: rgba(0, 0, 0, 0.927);
 
 
 
@@ -10,7 +10,7 @@ html {
 }
 
 a {
-    color: rgb(4, 117, 42);
+    color: rgb(255, 255, 255);
 }
 
 img {

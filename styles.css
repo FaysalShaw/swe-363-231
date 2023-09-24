@@ -1,5 +1,5 @@
 em {
-    background-color: blue;
+    background-color: rgb(45, 57, 53);
 }
 
 th {
@@ -12,16 +12,14 @@ th {
 
 #the_most_important {
     text-transform: uppercase;
-    background-color: gold;
+    background-color: rgb(12, 43, 24);
 }
 
 .VIP {
     background-color: black;
 }
 
-h2 {
-    font-family: sans-serif;
-}
+
 
 h1,
 h2,
@@ -40,15 +38,24 @@ h2+p::first-letter {
 .rw:hover > .VIP, .rw:hover> .top, .rw:hover {
     background-color: rgb(230, 83, 83);
 }
-nav a{
-   display: inline;
+nav li{
+   
     text-decoration: none;
-    cursor: default;
-}
-a.first{
-    text-decoration: underline
+    flex-direction: column;
+    display: inline;
+ 
+    
+    
     
 }
+
+
+
+header{
+    display: inline-flex;
+    padding: 20px;
+}
+
 
 tr:nth-child(odd){
 background-color: rgb(8, 54, 54);
@@ -65,6 +72,9 @@ tr:nth-child(even){
 
 a{
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
 }
 input{
     height: 20px;
@@ -72,6 +82,90 @@ input{
     
 }
 
-#message{
+input[name = Message] {  
     height: 50px;
 }
+
+footer{
+    display: inline;
+    
+}
+
+
+
+
+nav li:nth-child(1) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 1s;
+ }
+ 
+ nav li:nth-child(2) {
+   
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 2s;
+ }
+ 
+ nav li:nth-child(3) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 3s;
+ }
+nav li:nth-child(4) {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 4s;
+  
+ }
+
+
+nav:hover li {
+    opacity: 1;
+}
+
+
+
+ 
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+    border-top: 5px solid #011526; 
+    border-radius: 50%;
+    animation: spin 2s linear infinite, hideLoader 2s 2s forwards; 
+    z-index: 9999;
+ }
+
+ #content{
+    opacity: 0;
+    animation: ShowContent 2s 2s forwards;
+ }
+ 
+ @keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+ }
+ 
+ @keyframes hideLoader {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+ }
+
+
+ @keyframes ShowContent {
+    0% { opacity: 0; }
+    100% { opacity: 1; display: inline; }
+ }
+.button:hover{
+
+background-color: #0c6cf2;
+transition: 0.7s;
+}
+    
+     
