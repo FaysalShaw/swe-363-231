@@ -183,4 +183,22 @@ background-color: #0c6cf2;
 transition: 0.7s;
 }
     
-     
+@media (1px <= width <= 769px) {
+    body{
+        max-width: 100%;
+    }
+    header{
+        max-width: 100%;
+    }
+     img{
+        max-width: 100%;
+    }
+    table{
+        font-size: 2em;
+    }
+    footer{
+        font-size: 1em;
+    }
+    
+  
+}
