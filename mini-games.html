@@ -72,6 +72,7 @@
             // when we click on a cell add the letter 
             let board = document.getElementsByClassName("board")[0]
             board.addEventListener("click", cellClicked)
+            document.addEventListener("keydown", KeyPress)
             
             function cellClicked(event) {
                 let cell = event.target
@@ -150,10 +151,7 @@
 
             }}}
 
-           
-
-                
-            
+ 
         </script>
     </div>
 </body>

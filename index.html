@@ -51,7 +51,7 @@
             
        
         </nav>
-        
+        <p>Precie cut updated recently</p>
     <!-- Side text -->
         <p class="side">Online booking status : Available</p>
 
@@ -137,5 +137,45 @@
 
 </body>
 </div>
+<script>
+alert("you can use p to navigate to different paragraphs and tab to navigate to different links");
 
+  let currentParagraphIndex = 0;
+
+  const paragraphs = document.querySelectorAll('p');
+
+
+  document.addEventListener('keydown', function (event) {
+
+      if (event.key === 'p') {
+          if (currentParagraphIndex < paragraphs.length) {
+            currentParagraphIndex++;
+          }else{
+            currentParagraphIndex=0
+          }
+
+          paragraphs[currentParagraphIndex].scrollIntoView({ behavior: 'smooth' });
+          
+      }
+  });
+
+  let currentLinkIndex = 0;
+
+const links = document.querySelectorAll('a');
+
+
+document.addEventListener('keydown', function (event) {
+
+    if (event.key === 'Tab') {
+        if (currentLinkIndex < links.length) {
+          currentLinkIndex++;
+        }else{
+          currentLinkIndex=0
+        }
+
+        links[currentLinkIndex].scrollIntoView({ behavior: 'smooth' });
+        
+    }
+});
+</script>
 </html>
