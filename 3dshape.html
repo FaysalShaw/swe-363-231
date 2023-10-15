@@ -6,12 +6,13 @@
       <script src="three.min.js"></script>
 </head>
 <body>
-    
-
+    <p id="para">If you are inactive for a minute a 3D shape will be displayed so wait for a minute and see what happens :] this text will also dissapear and the image will dissapear when the shape appears</p>
+<img id="pic" src="/Assets/Razor.jpg" alt="a photo of a razor" width="50" height="50">
 <script>
     // scenece 
     const scene = new THREE.Scene();
-  
+    const paragraph = document.getElementById('para');
+    const picture = document.getElementById('pic');
     //camera 
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.z = 5;
@@ -41,7 +42,40 @@
   
     draw();
 
-    
+    let timeout;
+
+    function clearScreenSaver() {
+
+    clearTimeout(timeout);
+
+    renderer.domElement.style.display = 'none';
+    paragraph.style.opacity = 1; 
+    picture.style.opacity = 1; 
+    }
+
+ 
+
+    function restartScreenSaver() {
+
+    timeout = setTimeout(() => {
+
+        renderer.domElement.style.display = 'block';
+        paragraph.style.opacity = 0;
+        picture.style.opacity = 0; 
+
+    }, 60000);
+
+    }
+
+ 
+
+    document.addEventListener('mousemove', clearScreenSaver);
+    document.addEventListener('keydown', clearScreenSaver);
+ 
+
+    document.addEventListener('mousemove', restartScreenSaver);
+    document.addEventListener('keydown', restartScreenSaver);
+
   
   </script>
   
