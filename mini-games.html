@@ -72,7 +72,6 @@
             // when we click on a cell add the letter 
             let board = document.getElementsByClassName("board")[0]
             board.addEventListener("click", cellClicked)
-            document.addEventListener("keydown", KeyPress)
             
             function cellClicked(event) {
                 let cell = event.target
@@ -151,7 +150,9 @@
 
             }}}
 
- 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evenNumbers = numbers.filter((number) => number % 2 === 0);
+console.log(evenNumbers);
         </script>
     </div>
 </body>
