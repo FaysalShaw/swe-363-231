@@ -60,3 +60,34 @@
 
 
 </html>
+
+<script>
+
+
+class topSelling{
+  
+  constructor(Service){
+    this.Service = Service
+  }
+ getService(){
+  return this.Service
+ }
+
+}
+
+const bestSelling = new topSelling("Haircut")
+const bestSelling2 = new topSelling("Hair therapy")
+const bestSelling3 = new topSelling("Bridegroom preparation")
+const body = document.body
+const div = document.createElement("div")
+const div2 = document.createElement("div")
+const div3 = document.createElement("div")
+const para = document.createElement("p")
+const para2 = document.createElement("p")
+const para3 = document.createElement("p")
+body.append(para.innerText= " the best selling service currently is " + bestSelling.getService())
+body.append(div)
+body.append(para2.innerText= "   and the second best is " + bestSelling2.getService())
+body.append(div2)
+body.append(para3.innerText= "   the third best selling is " + bestSelling3.getService())
+</script>
