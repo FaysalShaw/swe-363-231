@@ -10,6 +10,4 @@ const foxImage = document.getElementById('foxImage');
            foxImage.src = data.image;
        })
 
-
-
-window.onload = getRandomFox;
+     
