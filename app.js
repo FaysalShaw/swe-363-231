@@ -4,19 +4,19 @@ app.use(express.static(__dirname));
 
 
 app.get('/', (req, res) => {
-   res.sendFile("index.html")
+   res.sendFile(__dirname +"/index.html")
 });
 
 app.get('/locatiosn', (req, res) => {
-    res.sendFile("Locations.html")
+    res.sendFile(__dirname +"/Locations.html")
  });
 
  app.get('/JobApp', (req, res) => {
-    res.sendFile("JobApp.html")
+    res.sendFile(__dirname +"/JobApp.html")
  });
 
  app.get('/ContactUs', (req, res) => {
-    res.sendFile("ContactUs.html")
+    res.sendFile(__dirname +"/ContactUs.html")
  });
 
 const port = 3000;
