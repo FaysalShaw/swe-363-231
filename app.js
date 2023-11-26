@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
    res.sendFile(__dirname +"/index.html")
 });
 
-app.get('/locatiosn', (req, res) => {
+app.get('/locations', (req, res) => {
     res.sendFile(__dirname +"/Locations.html")
  });
 
