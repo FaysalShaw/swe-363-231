@@ -11,7 +11,7 @@ app.use(express.static(__dirname));
 
 
 
-const port = 50000;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
